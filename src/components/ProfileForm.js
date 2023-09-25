@@ -19,7 +19,6 @@ const Head = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
 `;
 
 const P = styled.h3`
@@ -128,6 +127,7 @@ const ProfileForm = () => {
     <Div>
       <Head>
         <P>Create Profile</P>
+        <p>Input contact details</p>
       </Head>
       <Form onSubmit={handleSubmit}>
         <InputDiv>

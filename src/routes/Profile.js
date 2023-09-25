@@ -86,6 +86,7 @@ const Profile = () => {
         <H2>Your profile</H2>
 
         <Card>
+          <H3>Contact details</H3>
           <P>Full Name: {profile && profile.full_name}</P>
           <P>Email Address: {profile && profile.email}</P>
           <P>Phone Number: {profile && profile.phone}</P>

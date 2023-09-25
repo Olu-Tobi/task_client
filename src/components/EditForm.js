@@ -151,7 +151,7 @@ const EditForm = () => {
     <>
       <Div>
         <Head>
-          <P>Edit Profile</P>
+          <P>Edit Contact Details</P>
         </Head>
         <Form onSubmit={handleSubmit}>
           <InputDiv>

@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./routes/Home";
+import Register from "./routes/Register";
+import Login from "./routes/Login";
+import Profile from "./routes/Profile";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { UserContextProvider } from "./context/userContext";
+import PreLogin from "./routes/PreLogin";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <UserContextProvider>
+        <ToastContainer />
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<PreLogin />} />
+            <Route exact path="/register" element={<Register />} />
+            <Route exact path="/login" element={<Login />} />
+            <Route exact path="/user/:id" element={<Home />} />
+            <Route exact path="/user/:id/profile" element={<Profile />} />
+          </Routes>
+        </Router>
+      </UserContextProvider>
+    </>
   );
 }
 

@@ -27,9 +27,7 @@ This repository contains the source code for a full-stack web application built 
 
 6. **RESTful API**: The application provides a RESTful API for various operations, including user management, post creation, and image uploads.
 
-7. **User Profile**: Users can create and customize their profiles, including avatars and profile information.
-
-8. **Real-time Features**: Incorporate real-time features like live chat or notifications.
+7. **User Profile**: Users can create and customize their profiles, including their contact information.
 
 ## Prerequisites
 

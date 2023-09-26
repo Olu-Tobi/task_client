@@ -80,7 +80,7 @@ const Profile = () => {
   }, []);
 
   return (
-    <Div>
+    <Div className="noSelect">
       <Navbar />
       <Wrapper>
         <H2>Your profile</H2>

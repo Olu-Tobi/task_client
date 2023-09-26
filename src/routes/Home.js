@@ -61,7 +61,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Div>
+    <Div className="noSelect">
       <Navbar />
       <Wrapper>
         <H2>Welcome, {name}</H2>

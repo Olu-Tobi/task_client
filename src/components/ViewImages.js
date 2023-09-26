@@ -78,7 +78,11 @@ const ViewImages = () => {
       {images.length !== 0 && (
         <Div>
           {images?.map((image, i) => (
-            <ImgDiv key={i} onClick={() => handleClick(image)}>
+            <ImgDiv
+              key={i}
+              onClick={() => handleClick(image)}
+              className="noSelect"
+            >
               <Img src={image?.image} alt="image" />
             </ImgDiv>
           ))}
